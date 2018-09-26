@@ -1,6 +1,5 @@
 package com.ncmon.thrall.viewmodel;
 
-import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -23,12 +22,7 @@ public class ViewModelActivity extends AppCompatActivity implements View.OnClick
         textView = findViewById(R.id.textView);
         textView.setOnClickListener(this);
         communicateViewModel = ViewModelProviders.of(this).get(CommunicateViewModel.class);
-        communicateViewModel.getName().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        communicateViewModel.getName().observe(this, s -> textView.setText(s));
     }
     @Override
     public void onClick(View v) {
