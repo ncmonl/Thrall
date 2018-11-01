@@ -3,7 +3,7 @@ Android Jetpack Learning
 
 # Licence
 ```
-Copyright [2018] [name of copyright owner]
+Copyright 2018 ncmon
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
