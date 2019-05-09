@@ -1,5 +1,5 @@
 # Thrall
-Android Jetpack Learning
+Android Jetpack Components
 
 # License
 ```
